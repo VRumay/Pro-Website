@@ -1,0 +1,146 @@
+/* General style */
+
+  *{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Helvetica', sans-serif;
+    color: rgb(76, 76, 76);  
+  }
+
+  html {
+    height: 100%;
+    width: 100%;
+  }
+
+  header, footer {
+    background: linear-gradient(90deg, rgba(253,224,29,1) 0%, rgb(253, 219, 29) 35%, rgba(252,69,69,1) 100%);
+    width: 100%;
+    box-shadow: 0 5px 2px -2px lightgrey;
+}
+
+  header {
+    position: relative;
+    top:0; 
+  }
+
+
+
+  footer {
+    position: fixed;
+    bottom:0; 
+}
+
+  footer p{
+    padding: 1%;
+  }
+
+  header > h1 {
+    top: 0px;
+    font-weight: bold;
+    font-size: 56px;
+    margin: 0px;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .descripcion {
+    padding: 2.5%;
+  }
+
+  /* Image slider */
+
+  body { margin: 0; } 
+  .slider { overflow: hidden; }
+  .slider figure img { width: 20%; float: left; }
+  .slider figure { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite; 
+  }
+
+  @keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+    
+
+
+
+/* Navigation bar */
+
+.barra-menu {
+  width: 100%;
+}
+
+nav.barra-menu div {
+  display:inline-block;
+  text-decoration: none;
+  padding: 10px 15px;
+  background: none;
+}
+
+nav.barra-menu div > div > a {
+  font-weight: bold;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav.barra-menu > div > div:hover {
+  background-color: rgba(252,69,69,1);
+  cursor: pointer;
+}
+
+/* map styler */
+
+.mapas {
+  padding: 7%;
+}
+
+iframe {
+  margin: 15px;
+  margin-bottom: 15px;
+  outline: 1px solid rgb(51, 51, 51);
+  box-shadow: 0 5px 2px -2px lightgrey;
+}
+
+/* contact form */
+input, select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+
+}
+
+input[type=submit] {
+  background-color: rgba(252,69,69,1);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 5%;
+}
